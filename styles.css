@@ -5,14 +5,14 @@
 }
 
 body {
-    padding: 1rem;
+    padding: 3rem;
     text-align: center;
     background-color:black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:antiquewhite;
+    color:rgb(173, 112, 32);
     background-image: url("assets/moon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ header {
 
 #weekly-cocktails img {
     flex: 0 1 auto;
-    height: 150px;
+    height: 100px;
     margin-right: 0.5rem;
     cursor: pointer;
   }
@@ -62,11 +62,11 @@ header {
   }
 
 .ingredients {
-    bottom: 20px;
+    bottom: 30px;
   }
 
 .instructions {
-    bottom: 20px;
+    bottom: 30px;
   }
 
   form {
@@ -80,8 +80,8 @@ header {
   input,
 textarea {
   font-size: 1rem;
-  border: 1px solid black;
-  background-color:antiquewhite;
+  border: 1px solid rgb(250, 250, 250);
+  background-color:rgb(12, 12, 11);
   padding: 0.5rem;
   margin: 0.25rem 0;
   width: 100%;
@@ -96,7 +96,7 @@ input[type="submit"] {
   }
 
   input[type="submit"]:active {
-    background-color: gray;
+    background-color: rgb(142, 169, 96);
   }
 
   form h4 {
