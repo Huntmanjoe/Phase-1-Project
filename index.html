@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail Club</title>
-    <script defer src="index.js"></script>
+    <script defer src="src/index.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -21,8 +21,8 @@
    <div id="cocktail-information">
     <img class = "main-image" src=" " alt = "" />
     <h2 class = "name"></h2>
-    <h3 class = "ingredients"></h3>
-    <h3 class = "instructions"></h3>
+    <h3 class = "ingredients">Insert Ingredients Here</h3>
+    <h3 class = "instructions">Insert Instructions Here</h3>
    </div> 
 
    <h3>Description:</h3>
@@ -34,12 +34,14 @@
    <h3>Leave a Comment!</h3>
    <form id = "commentSection">
     <h4>Your Feedback is crucial to us, so let us know what you thought!</h4>
-    <label for="name">Name: </label>
-    <input type="text" name="name" id ="name-input" />
-    <label for="email">Email: </label>
-    <input type="text" name="email" id="email-input" />
-    <label for="comment">Comment: </label>
-    <input type="text" name="comment" id="comment-input" />
+    <label for="name-input">Name: </label>
+    <input type="text" name="name" id="name-input" autocomplete="name" />
+
+    <label for="email-input">Email: </label>
+    <input type="text" name="email" id="email-input" autocomplete="email" />
+
+    <label for="comment-input">Comment: </label>
+    <input type="text" name="comment" id="comment-input" autocomplete="off" />
    </form>
 
 
