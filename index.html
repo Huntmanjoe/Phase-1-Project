@@ -21,28 +21,35 @@
    <div id="cocktail-information">
     <img class = "main-image" src=" " alt = "" />
     <h2 class = "name"></h2>
-    <h3 class = "ingredients">Insert Ingredients Here</h3>
-    <h3 class = "instructions">Insert Instructions Here</h3>
    </div> 
 
-   <h3>Description:</h3>
+   <div id="ingred-instruc">
+    <h3 class = "ingredients">Insert Ingredients Here</h3>
+    <h3 class = "instructions">Insert Instructions Here</h3>
+   </div>
+
+
+   
+
+
+
+   <h3>Our Pick:</h3>
    <p>
     <span id = "descriptionDisplay">Description Information</span>
    </p>
-   
 
-   <h3>Leave a Comment!</h3>
-   <form id = "commentSection">
-    <h4>Your Feedback is crucial to us, so let us know what you thought!</h4>
-    <label for="name-input">Name: </label>
-    <input type="text" name="name" id="name-input" autocomplete="name" />
 
-    <label for="email-input">Email: </label>
-    <input type="text" name="email" id="email-input" autocomplete="email" />
-
-    <label for="comment-input">Comment: </label>
-    <input type="text" name="comment" id="comment-input" autocomplete="off" />
-   </form>
+   <div id="comment-section">
+    <h3>Comments:</h3>
+    <form id="comment-form">
+        <input type="text" id="name-input" placeholder="Your Name" required>
+        <textarea id="comment-input" placeholder="Your Comment" required></textarea>
+        <button type="submit">Post Comment</button>
+    </form>
+    <div id="comments-container">
+        <!-- Comments will be displayed here -->
+    </div>
+</div>
 
 
 </body>
