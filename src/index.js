@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function drinkDisplay(drink) {
         const image = document.querySelector('#cocktail-information .main-image');
         const name = document.querySelector('#cocktail-information .name');
-        const ingredients = document.querySelector('#cocktail-information .ingredients');
-        const instructions = document.querySelector('#cocktail-information .instructions');
+        const ingredients = document.querySelector('#ingred-instruc .ingredients');
+        const instructions = document.querySelector('#ingred-instruc .instructions');
     
         image.src = drink.strDrinkThumb;
         name.textContent = drink.strDrink;
