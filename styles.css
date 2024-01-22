@@ -107,7 +107,7 @@
       background-color:antiquewhite;
     }
 
-    #comment-form input, #comment-form textarea {
+    #comment-form input, #comment-form textarea, #subscription-form input{
       color: antiquewhite
     }
   

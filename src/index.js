@@ -27,7 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const descriptionDisplay = document.getElementById('descriptionDisplay');
         const drinkDescriptions = {
-            'Whitecap Margarita': 'Whitecap Margarita is a must-have! If you’re a coconut lover, then this is the drink for you!',
+            'Whitecap Margarita': "Whitecap Margarita is a must-have! If you’re a coconut lover, then this is the drink for you!",
+            'Blue Margarita': "Blue Margarita saves lives. I love anything blue and the Blue Curacao is delicious! Don't forget the salted rimmed glass!",
+            'Smashed Watermelon Margarita': "I love the Smashed Watermelon Margarita because it makes me feel like sunshine when I drink it. It is absolutely my go to when I drop the kids off at grandmas!",
+            'Margarita': "I love a classic Margarita. When I tell you this is my favorite drink after a long days of work. You guys have to try it! Enjoy!",
+            "Tommy's Margarita": "Tommy's Margarita isn't ordinary as much as it may seem. The agave syrup makes it so good to the point if I don't watch out I will end up drinking about five of these.",
+            'Strawberry Margarita':"Strawberry Margaritas be bussin! Man I love a good ole Classic Margarita and the strawberry schnapps is like candy, this is why I decided to share this recipe!"
     }
     descriptionDisplay.textContent = drinkDescriptions[drink.strDrink] || 'No description available.';
     }
@@ -56,7 +61,12 @@ document.getElementById('comment-form').addEventListener('submit', function(even
     document.getElementById('comments-container').appendChild(commentDiv);
     document.getElementById('name-input').value = '';
     document.getElementById('comment-input').value = '';
-
-
 });
+
+document.getElementById('subscription-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('sub-input').value = '';
+
+    alert("You're subscribed! We will notify you when Cocktail Club updates for the week!");
+})
 
