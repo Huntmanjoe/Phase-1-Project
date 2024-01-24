@@ -33,28 +33,44 @@
     <span id = "descriptionDisplay">Description Information</span>
    </p>
 
-   <div id="subbox">
-    <h3>Want to Keep up to Date? Subscribe and know when Cocktail Club updates for the week!</h3>
-    <form id="subscription-form">
-        <input type="text" id="sub-input" placeholder="E-mail" required>
-        <button type="submit">Subscribe!</button>
-    </form>
-   </div>
 
 
 
-   <div id="comment-section">
-    <h3>Leave a comment!</h3>
-    <form id="comment-form">
-        <input type="text" id="name-input" placeholder="Your Name" required>
-        <textarea id="comment-input" placeholder="Your Comment" required></textarea>
-        <button type="submit">Post Comment</button>
-    </form>
-    <div id="comments-container">
-        <!-- Comments will be displayed here -->
+<div class = "form-container">
+    <div id="cocktail-voting">
+        <h3>Vote for Your Favorite Cocktail!</h3>
+        <form id="vote-form">
+            <select id="cocktail-select">
+                <option value="">Select a Cocktail</option>
+                <option value="Margarita">Margarita</option>
+                <option value="Blue Margarita">Blue Margarita</option>
+                <option value="Tommy's Margarita">Tommy's Margarita</option>
+                <option value="Whitecap Margarita">Whitecap Margarita</option>
+                <option value="Strawberry Margarita">Strawberry Margarita</option>
+                <option value="Smashed Watermelon Margarita">Smashed Watermelon Margarita</option>
+            </select>
+            <button type="submit">Vote</button>
+        </form>
+        <div id="vote-result"></div>
+        <div>Votes: <span id="vote-counter">0</span></div>
     </div>
+       <div id="comment-section">
+        <h3>Leave a comment!</h3>
+        <form id="comment-form">
+            <input type="text" id="name-input" placeholder="Your Name" required>
+            <textarea id="comment-input" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <div id="comments-container">
+        </div>
+    </div>
+    <div id="subbox">
+        <h3>Subscribe and know when Cocktail Club updates for the week!</h3>
+        <form id="subscription-form">
+            <input type="text" id="sub-input" placeholder="E-mail" required>
+            <button type="submit">Subscribe!</button>
+        </form>
+       </div>
 </div>
-
-
 </body>
 </html>

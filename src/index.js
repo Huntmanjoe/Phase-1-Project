@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Blue Margarita': "Blue Margarita saves lives. I love anything blue and the Blue Curacao is delicious! Don't forget the salted rimmed glass!",
             'Smashed Watermelon Margarita': "I love the Smashed Watermelon Margarita because it makes me feel like sunshine when I drink it. It is absolutely my go to when I drop the kids off at grandmas!",
             'Margarita': "I love a classic Margarita. When I tell you this is my favorite drink after a long days of work. You guys have to try it! Enjoy!",
-            "Tommy's Margarita": "Tommy's Margarita isn't ordinary as much as it may seem. The agave syrup makes it so good to the point if I don't watch out I will end up drinking about five of these.",
+            "Tommy's Margarita": "Tommy's Margarita isn't as ordinary as it may seem. The agave syrup makes it so good to the point that if I don't watch out, I will end up drinking about five of these.",
             'Strawberry Margarita':"Strawberry Margaritas be bussin! Man I love a good ole Classic Margarita and the strawberry schnapps is like candy, this is why I decided to share this recipe!"
     }
     descriptionDisplay.textContent = drinkDescriptions[drink.strDrink] || 'No description available.';
@@ -70,3 +70,15 @@ document.getElementById('subscription-form').addEventListener('submit', function
     alert("You're subscribed! We will notify you when Cocktail Club updates for the week!");
 })
 
+document.getElementById('vote-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const selectedCocktail = document.getElementById('cocktail-select').value;
+    if (selectedCocktail) {
+        const counterElement = document.getElementById('vote-counter');
+        let currentCount = parseInt(counterElement.textContent);
+        counterElement.textContent = currentCount + 1;
+        document.getElementById('vote-result').textContent = `You voted for: ${selectedCocktail}! Thank you!`;
+    } else {
+        document.getElementById('vote-result').textContent = 'Please select a cocktail to vote.';
+    }
+});

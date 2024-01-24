@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    /* font-family:'Brush Script M', cursive; */
+    /* font-family:'Brush Script M', cursive;*/ 
     box-sizing: border-box;
   }
   /* <h1>Cocktail Club</h1> */
@@ -13,7 +13,7 @@
     font-size: 150%;
       padding: 0.7rem;
       width: 100%;
-      color:rgb(41, 112, 166);
+      color:rgb(85, 217, 235);
       /* background-color: black; */
   }
 
@@ -26,7 +26,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color:rgb(173, 112, 32);
+      color:rgb(85, 217, 235);
       background-image: url("assets/moon.jpg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -66,7 +66,7 @@
   
     .name {
       bottom: 60px;
-      color:rgb(173, 112, 32);
+      color:rgb(85, 217, 235);
 
     }
 
@@ -127,7 +127,7 @@
     }
   
     input[type="submit"]:active {
-      background-color: rgb(142, 169, 96);
+      background-color: rgb(92, 250, 189);
      
     }
   
@@ -144,18 +144,50 @@
     }
   
   #comments-container div {
-      background-color: #f2f2f2;
+      background-color: antiquewhite;
       padding: 10px;
       margin-top: 10px;
       border-radius: 5px;
-      color: aliceblue;
+      color: rgb(241, 64, 64);
   }
 
   .btn {
     padding: 10px;
     color: rgb(11, 37, 78);
     background-color: rgb(72, 0, 255);
-    color: aliceblue;
+    color: rgb(85, 217, 235);
   } 
 
-/* hello */
+  #subbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%; 
+  }
+
+.form-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: start; 
+  flex-wrap: wrap; 
+  margin: 1rem 0; 
+}
+
+#subbox, #comment-section, #cocktail-voting {
+  flex-basis: 30%; 
+  margin: 0.5rem; 
+}
+
+#subbox h3, #comment-section h3, #cocktail-voting h3 {
+  text-align: center;
+  margin-bottom: 1rem; 
+}
+
+#subbox form, #comment-section form, #cocktail-voting form {
+  align-items: center;
+}
+
+#subbox form, #comment-section form, #cocktail-voting form {
+  width: 100%; 
+}
